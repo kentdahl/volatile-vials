@@ -18,7 +18,6 @@ defmodule Matte do
     IO.puts "Kvaderatroten av #{a} = #{ :math.sqrt(a)   }"
     regne
   end
-
 end
 
 Matte.regne
