@@ -26,7 +26,10 @@ defmodule TestPerson do
   def main(_args) do
     person = %Person{}
     IO.inspect person
-    IO.puts    person     #=> "Ola Nordmann er 18 år.""
+    IO.puts    person     #=> "Ola Nordmann er 18 år."
+
+    oline = %{ person | fornavn: 'Oline'}
+    IO.puts oline   #=> "Oline Nordmann er 18 år."
 
     per = %Person{fornavn: "Per", etternavn: "Spelleman", alder: 127}
     IO.puts per
