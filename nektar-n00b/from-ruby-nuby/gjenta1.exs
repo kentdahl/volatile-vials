@@ -7,7 +7,7 @@ defmodule Gjenta do
     if svar == "jenten" do
       IO.puts "Er du en luring? Eller Bergenser?"
     else
-      loop  # Tail-recursion!
+      loop  # Hale-rekursjon!
     end
   end
 end

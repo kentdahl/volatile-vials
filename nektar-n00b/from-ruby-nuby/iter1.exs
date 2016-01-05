@@ -12,7 +12,7 @@ tall = 5
 
 # Iterasjon ved bruk av Enum(erable) modulen
 (1..10) 
-  |> Enum.map(fn i ->
+  |> Enum.map(fn(i) ->
       "#{i} gange #{tall} er #{i*tall}\n"
     end)
   |> IO.puts

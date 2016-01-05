@@ -8,7 +8,7 @@ if svar == "ja" do
 end
 
 # 'unless' er det motsatte av 'if'
-if svar == "nei" do
+unless svar == "nei" do
   IO.puts "La oss kode litt Elixir."
 end
 

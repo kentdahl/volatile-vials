@@ -18,8 +18,6 @@ else
   end
 end
 
-# 'if' kan også returnere en verdi, så du slipper
-# å bruke "ternary" (? : ) operatoren hvis du ikke liker den.
 drikkevare = 
   if alder >= 60 do
     "Sviskejuice"
