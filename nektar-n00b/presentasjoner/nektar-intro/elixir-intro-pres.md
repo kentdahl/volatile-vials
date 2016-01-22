@@ -99,9 +99,10 @@ Det er ingen metoder, mkay?
 
 ---
 
-# Vis kode - grunnleggende
+# Se kode
+## grunnleggende
 
-* heiverden1.exs
+* [heiverden1.exs](https://github.com/kentdahl/nektar-nuby/blob/master/elixir-intro/kode/eksempler/heiverden1.exs)
 * variabler1.exs
 * tekst1.exs
 * utput1.exs
@@ -114,14 +115,20 @@ Det er ingen metoder, mkay?
 
 ## Typer tekst 
 
-* `:atom` - omtrent som Ruby sitt `Symbol`
-* `"Tekst-streng"` - binær-data, UTF-8
-* `'Bokstaver'`  -  liste av tegn.
+* `:atom`             &rArr; omtrent som Ruby sitt `Symbol`
+* `"Tekst-streng"`    &rArr; binær-data, UTF-8
+* `'Bokstaver'`       &rArr; liste av tegn.
+
+---
+
+# Tekst i kode
 
 ## Bygge tekst
 
-* Interpolation - `"Hei #{ navn }"`
-* Sammenføyning - `"Hei" <> navn`
+* Interpolation:
+  * `"Hei #{ navn }"`
+* Sammenføyning:
+  * `"Hei" <> navn`
 
 ---
 
@@ -137,7 +144,16 @@ IO.puts(String.upcase("Foo"))
 
 ---
 
-# Vis kode - flytkontroll
+# Funksjoner
+## Se kode
+
+* fun1.exs
+* fun2.exs
+
+---
+
+# Flytkontroll
+## Se kode
 
 * hvis1.exs
 * hvis2.exs
@@ -155,7 +171,8 @@ IO.puts(String.upcase("Foo"))
 
 ---
 
-# Vis kode - iterasjon og løkker
+# Iterasjon og løkker
+## Se kode 
 
 * gjenta1.exs
 * gjenta2.exs
@@ -166,17 +183,18 @@ IO.puts(String.upcase("Foo"))
 
 # Iterasjon og løkker
 
+* `for` er en _"list comprehension"_ og kun ment for datastrukturer
 * Ingen `while`, `until` eller `loop` i Elixir
 * Bruk rekursjon i stedet
   * Helst hale-rekursjon (_Tail Recursion_)
   * TCO - Tail Call Optimization
-* `for` er en _"list comprehension"_ og kun ment for datastrukturer
 * Tupler er _ikke_ ment for iterasjon!
 * `1..10` er en _Range_ 
 
 ---
 
-# Vis kode - data-strukturer
+# Data-strukturer
+## Se kode 
 
 * liste1.exs
 * ordbok1.exs
@@ -188,22 +206,29 @@ IO.puts(String.upcase("Foo"))
 ---
 
 # Data-strukturer
+## Tupler
 
-* Tupler  
-  * `{:ok, "Ola", 42}`
-  * fattigmanns _"Struct"_
-  * oppslag på indeks - `elem(tup, 0)`
-* Lister
-  * `["Per", "Pål", "Espen"]`
-  * enveis lenket liste
-    * enkelt å dele i `[hode|hale]`
-    * kjapt trygt og billig å legge element foran
-    * dyrt å legge til element bak
-* Maps
-  * `%{navn: "Ola", alder: 42}`
-  * likner på Ruby sin `Hash`
+* `tup = {:ok, "Ola", 42}`
+* fattigmanns _"Struct"_
+* oppslag på indeks - `elem(tup, 0)`
 
+---
 
+# Data-strukturer
+## Lister
+* `["Per", "Pål", "Espen"]`
+* enveis lenket liste
+  * enkelt å dele i `[hode|hale]`
+  * kjapt trygt og billig å legge element foran
+  * dyrt å legge til element bak
+
+---
+
+# Data-strukturer
+## Maps
+* `map = %{navn: "Ola", alder: 42}`
+  * `map.navn #=> "Ola"`
+* likner på Ruby sin `Hash`
 
 
 ---
@@ -212,15 +237,43 @@ IO.puts(String.upcase("Foo"))
 
 * `=` tegnet er ikke vanlig tilordning
   * Elixir gjør _pattern matching_ på datastrukturer
-  * ```
-{5, 7, 9}  = {a, 7, b}  #=> a==5 og b==9
-{1, ^a, c} = {1, 5, 8}  #=> c==8
-```
+* Kan brukes i funksjonsdefinisjoner, `cond`, `case` osv.
+
+
+---
+
+# Moduler
+* Kan nøstes
+* Grupperer funksjoner
+* Kan inkluderes i andre moduler:
+  * `import` - hent inn funksjonene
+  * `use` - for meta-programmeringsmagi
 
 ---
 
 
+# Egne data-strukturer
+## Se kode
+
+* struct1.exs
+* struct2.exs
+
+
+
+
+---
+
+# Større eksempler
+## Se kode
+* gjett.exs
+* mos_mulvarp.exs
+
+---
+
 TODO:
+* Process - kjøleskap?
+
+
 * Funksjonelt
   * Tilstand...
   * "Oppsamler" - akkumulator-pattern
@@ -232,6 +285,9 @@ TODO:
 * Rekursjon
 * Erlang funksjoner og biblioteker
   * OTP
+* Macro
+
+
 
 MINOR:
 * ingen `return` statement.
