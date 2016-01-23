@@ -22,9 +22,22 @@ brew install elixir
   * Sixty guest
   * passord: ...
 * Kode eksempler: 
-  * https://github.com/kentdahl/volatile-vials/tree/master/nektar-n00b/from-ruby-nuby  FIXME
+  * https://github.com/kentdahl/nektar-nuby
 * Presentasjon: 
-  * http://kentdahl.github.io/RubyNuby/ FIXME!
+  * http://kentdahl.github.io/nektar-nuby/
+
+---
+
+
+# Hva er Elixir?
+
+* Funksjonelt programmeringsspråk
+  * Syntaks delvis Ruby inspirert
+  * Laget av José Valim (utvikler fra Rails core)
+* Basert på Erlang 
+  * Kjører på _BEAM_ (Erlang sin VM)
+  * Concurrent (samtidighet)
+  * Fault-tolerant
 
 ---
 
@@ -51,14 +64,6 @@ Kjøre en Elixir-fil som ett script:
 $ elixir heiverden1.exs
 Hei verden!
 ```
-
----
-
-# Hva er Elixir?
-
-* Funksjonelt programmeringsspråk
-* Syntaks delvis Ruby inspirert
-* Basert på Erlang 
 
 
 ---
