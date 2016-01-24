@@ -275,8 +275,21 @@ IO.puts(String.upcase("Foo"))
 
 ---
 
-TODO:
-* Process - kjøleskap?
+# Prosesser
+
+* Erlang prosesser
+  * Egen stack, GC, etc.
+  * Scheduling
+* Kommuniserer med meldinger
+  * _"Postkasse"_
+  * send / receive
+
+---
+
+# Prosesser
+## Se kode
+* kjoleskap1.exs
+
 
 
 * Funksjonelt
@@ -298,6 +311,14 @@ MINOR:
 * ingen `return` statement.
 * 
 
+
+# ... smaker som ...
+
+* iex - irb
+* mix - bundler + rake
+* hex - gem
+* Phoenix - Rails
+* 
 
 ---
 
